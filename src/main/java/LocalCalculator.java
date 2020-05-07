@@ -13,6 +13,14 @@ public class LocalCalculator implements CalculatorInterface {
     }
 
     public Double divide(Double x, Double y) {
+        try {
+            if (y == 0) {
+                throw new ArithmeticException();
+
+            }
+        } catch (Exception e) {
+            System.out.println("You cannot divide by zero");
+        }
         return x / y;
     }
 }

@@ -1,6 +1,7 @@
 public class CalculatorMain {
     public static void main(String[] args) {
         ConsoleReader reader = new ConsoleReader();
+        CalculatorTypes calculatorTypes;
         CalculatorInterface calculatorInterface = new LocalCalculator();//ask user about which calculator he want to use
         do {
             Formula formula = reader.readNext();
